@@ -1,0 +1,19 @@
+
+
+
+h3.section-title {
+
+  a {
+    font-size: 40px!important;
+    color: $white;
+  }
+  
+  a:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: $primary-blue;
+  }
+}

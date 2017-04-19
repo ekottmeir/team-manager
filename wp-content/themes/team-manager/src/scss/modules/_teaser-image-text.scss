@@ -1,0 +1,19 @@
+.teaser-image-text {
+  padding: 60px 40px;
+
+  .widget_text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    color: $white;
+  }
+
+  h3 {
+    background-color: $primary-blue;
+    color: $white;
+    padding: 5px 10px;
+    display: inline;
+  }
+}

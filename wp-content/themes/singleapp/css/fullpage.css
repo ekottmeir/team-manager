@@ -1,0 +1,927 @@
+.fullpage_layout .hfeedsite {
+    position: relative;
+}
+
+.fullpage_layout #page #fullpage-bg-image {
+    height: 200%;
+    left: -50%;
+    position: fixed;
+    top: -50%;
+    width: 200%;
+}
+
+.fullpage_layout #page #fullpage-bg-image img {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.fullpage_layout .fullpage-overlay {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.fullpage_layout .overlay {
+    display: none;
+}
+
+.fullpage_layout #crumbs {
+    margin: 60px 0 0;
+}
+
+
+/*--------------------------------------------------------------
+HEADER CSS
+--------------------------------------------------------------*/
+
+.fullpage_layout .site-header .tg-container {
+    width: 100%;
+}
+
+.fullpage_layout .header-wrapper {
+    box-shadow: none;
+}
+
+.fullpage_layout #header-text,
+.fullpage_layout .logo {
+    left: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.fullpage_layout #header-text {
+    left: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.fullpage_layout .logo {
+    margin-left: 17px;
+}
+
+.fullpage_layout .main-navigation {
+    position: fixed;
+    right: 60px;
+    text-align: right;
+    top: 0;
+    z-index: 999;
+}
+
+.fullpage_layout #site-navigation ul li {
+    float: none;
+    padding: 10px 0;
+}
+
+.fullpage_layout #site-navigation ul li a {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500px;
+    text-transform: capitalize;
+}
+
+.fullpage_layout #site-navigation ul li a:hover,
+.fullpage_layout #site-navigation ul li a.active {
+    color: #00aced;
+}
+
+.fullpage_layout #nav li a::after {
+    background-color: #000;
+    border-color: #000;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    content: "";
+    margin-top: 4px;
+    padding: 5px;
+    position: absolute;
+    right: -27px;
+    z-index: 99;
+}
+
+.fullpage_layout #nav li::after {
+    background-color: #000;
+    content: "";
+    margin-top: 17px;
+    padding: 0;
+    position: absolute;
+    right: -22px;
+    top: 0;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.fullpage_layout #nav li::before {
+    background-color: #000;
+    content: "";
+    margin-top: 17px;
+    padding: 21px 1px;
+    position: absolute;
+    right: -22px;
+    top: 0;
+}
+
+.fullpage_layout #nav li.active a {
+    color: #00aced;
+}
+
+.fullpage_layout #nav li a:hover::after,
+.fullpage_layout #nav li a.active::after {
+    background-color: #00aced;
+    border-color: #00aced;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.fullpage_layout #nav li:hover a::after,
+.fullpage_layout #nav li.active a::after {
+    background-color: #00aced;
+    border-color: #00aced;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.fullpage_layout #nav li:last-child:after,
+.fullpage_layout #nav li:last-child:before {
+    display: none;
+}
+
+.iphone-screen img {
+    margin-left: 0;
+}
+
+.banner-container {
+    padding: 0;
+    width: 1070px;
+}
+
+.fullpage_layout .banner-btn-wrapper > a {
+    background: #00aced;
+    border-radius: 0;
+}
+
+
+/*--------------------------------------------------------------
+FEATURE CSS
+--------------------------------------------------------------*/
+
+.fullpage_layout .section-title-wrapper,
+.fullpage_layout .sub-title {
+    text-align: left;
+    width: 100%;
+}
+
+.fullpage_layout .feature-desc,
+.fullpage_layout .feature-block .feature-image {
+    display: none;
+}
+
+.fullpage_layout .icon-border {
+    display: none;
+}
+
+.fullpage_layout .feature-right,
+.fullpage_layout .feature-left {
+    text-align: left;
+    float: left;
+    width: 40%;
+}
+
+.fullpage_layout .feature-left .feature-title a {
+    float: left;
+}
+
+.fullpage_layout .feature-icon {
+    float: none;
+    margin: 0;
+}
+
+.fullpage_layout .feature-subheading {
+    margin-left: 62px;
+}
+
+.fullpage_layout .feature-icon .fa {
+    left: 0;
+}
+
+
+/*--------------------------------------------------------------
+OVERVIEW CSS
+--------------------------------------------------------------*/
+
+.fullpage_layout .widget_featured_page_block .section-wrapper {
+    padding: 60px 0;
+}
+
+.fullpage_layout .black-iphone {
+    margin-top: 0;
+}
+
+.fullpage_layout .overview-image {
+    text-align: center;
+}
+
+.fullpage_layout .overview-wrapper {
+    margin-top: 0;
+}
+
+.fullpage_layout .tg-column-wrapper.feature-phone-image {
+    margin: 0;
+}
+
+.fullpage_layout .overview-content-image {
+    position: static;
+}
+
+
+/*--------------------------------------------------------------
+SHARE CSS
+--------------------------------------------------------------*/
+
+.fullpage_layout .share-wrapper .btn-wrapper {
+    text-align: left;
+}
+
+.fullpage_layout .share-wrapper .btn-wrapper a:first-child {
+    margin-left: 0;
+}
+
+.fullpage_layout .share-wrapper .btn-wrapper a:first-child,
+.fullpage_layout .share-wrapper .btn-wrapper a {
+    border: 2px solid #00aced;
+    color: #fff;
+    background: #00aced;
+}
+
+.fullpage_layout .share-wrapper .btn-wrapper a:first-child:hover,
+.fullpage_layout .share-wrapper .btn-wrapper a:hover {
+    border: 2px solid #00aced;
+    color: #000;
+    background: rgba(0, 0, 0, 0);
+}
+
+.fullpage_layout .share-wrapper .btn-wrapper {
+    margin-top: 20px;
+}
+
+.fullpage_layout .share-wrapper .btn-wrapper a:first-child,
+.fullpage_layout .share-wrapper .btn-wrapper a {
+    font-size: 14px;
+    padding: 16px 30px;
+}
+
+
+/*--------------------------------------------------------------
+SCREENSHOT CSS
+--------------------------------------------------------------*/
+
+.fullpage_layout .screenshot-wrapper {
+    margin: 0;
+    width: auto;
+}
+
+.fullpage_layout .screenshot-wrapper .bx-controls.bx-has-controls-direction {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%, -50%);
+    -moz-transform: translateY(-50%, -50%);
+    -ms-transform: translateY(-50%, -50%);
+    -o-transform: translateY(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.fullpage_layout .screenshot-slider {
+    margin: 0;
+}
+
+.fullpage_layout .screenshot-wrapper .tg-screenshot {
+    float: left;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    width: auto;
+}
+
+.fullpage_layout .screenshot-wrapper .bx-wrapper .bx-pager {
+    display: none;
+}
+
+.fullpage_layout .screenshot-wrapper .bx-wrapper {
+    position: relative;
+}
+
+.fullpage_layout .screenshot .bx-controls-direction {
+    display: block;
+    width: 370px;
+}
+
+.fullpage_layout .bx-prev,
+.fullpage_layout .bx-next {
+    font-size: 40px;
+    color: #a1a1a1;
+}
+
+.fullpage_layout .bx-prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fullpage_layout .bx-next {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/*--------------------------------------------------------------
+TESTIMONIAL CSS
+--------------------------------------------------------------*/
+
+.fullpage_layout .clients-reviews {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.fullpage_layout .reviews .bx-controls-direction {
+    display: none;
+}
+
+.fullpage_layout .reviews-desc {
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 20px;
+    color: #333333;
+    border-top: 3px solid #00aced;
+    position: relative;
+}
+
+.fullpage_layout .reviews-wrapper .bx-pager {
+    left: 68%;
+    position: absolute;
+    top: 69%;
+}
+
+.fullpage_layout .reviews-wrapper .bx-pager-item .bx-pager-link {
+    border-radius: 50%;
+    padding: 6px;
+    margin-left: 10px;
+    border-color: #00aced;
+}
+
+.fullpage_layout .reviews-wrapper .bx-pager-item .bx-pager-link.active {
+    border-color: #00aced;
+    background-color: #00aced;
+}
+
+.fullpage_layout .bx-controls-direction {
+    display: none;
+}
+
+.fullpage_layout .reviews-desc::after {
+    border-right: 20px solid rgba(255, 255, 255, 0.6);
+    border-top: 20px solid transparent;
+    bottom: -10px;
+    content: "";
+    height: 0;
+    left: 28px;
+    position: absolute;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    width: 0;
+}
+
+.fullpage_layout .client-image {
+    display: inline-block;
+}
+
+.fullpage_layout .client-name {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #00aced;
+    margin-left: 20px;
+}
+
+
+/*--------------------------------------------------------------
+CONTACT CSS
+--------------------------------------------------------------*/
+
+.fullpage_layout .your-name,
+.your-email {
+    width: 47.2%;
+}
+
+.fullpage_layout .contact-wrapper {
+    text-align: left;
+    width: 100%;
+}
+
+.fullpage_layout .contact-wrapper .name-email-wrapper input {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.fullpage_layout .contact-wrapper .your-message textarea {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100px;
+}
+
+.fullpage_layout .copyright {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.fullpage_layout .copyright .section-wrapper {
+    background-color: transparent;
+    padding: 20px 0;
+}
+
+.fullpage_layout .copyright-desc,
+.fullpage_layout .copyright-desc a,
+.fullpage_layout .design-by,
+.fullpage_layout .design-by a {
+    color: #333333;
+    display: inline-block;
+    font-style: italic;
+}
+
+.fullpage_layout .design-by {
+    margin-left: 5px;
+}
+
+.fullpage_layout .copyright-desc a {
+    color: #00aced;
+}
+
+.fullpage_layout .copyright-desc,
+.fullpage_layout .design-by {
+    margin-top: 0;
+}
+
+.fullpage_layout .contact-wrapper,
+.fullpage_layout .reviews-wrapper {
+    margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------
+Iphone screenshot CSS
+--------------------------------------------------------------*/
+
+.fullpage_layout .fullpage-content {
+    float: right;
+    width: 63%;
+    position: static;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    margin: 0;
+}
+
+.fullpage_layout .feature-phone-image .feature-center-image {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+}
+
+.fullpage_layout .tg-screenshot {
+    float: left;
+    height: 455px;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+}
+
+.admin-bar.fullpage_layout .feature-phone-image,
+.admin-bar.fullpage_layout .overview-content-image,
+.admin-bar.fullpage_layout .share-image,
+.admin-bar.fullpage_layout .screenshot-wrapper,
+.admin-bar.fullpage_layout .testimonials-image,
+.admin-bar.fullpage_layout .contact-image,
+.admin-bar.fullpage_layout .iphone-screen {
+    margin: 3px 0 0;
+}
+
+.fullpage_layout .tg-container {
+    width: 1070px;
+}
+
+
+/*--------------------------------------------------------------
+fullpage content CSS
+--------------------------------------------------------------*/
+
+.fullpage_layout .banner-title,
+.fullpage_layout .section-title,
+.fullpage_layout .overview-title {
+    font-size: 36px;
+    line-height: 60px;
+    color: #333333;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+.fullpage_layout .sub-title,
+.fullpage_layout .banner-content,
+.fullpage_layout .over-desc,
+.fullpage_layout .reviews .section-title-wrapper .sub-title {
+    color: #6b6c6c;
+    font-size: 14px;
+    font-style: normal;
+    margin: 30px 0;
+    line-height: 28px;
+}
+
+.fullpage_layout .feature-right,
+.fullpage_layout .feature-left {
+    float: left;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 44%;
+}
+
+.fullpage_layout .feature-left .feature-subheading,
+.fullpage_layout .feature-right .feature-subheading {
+    float: left;
+    margin: 0 0 0 40px;
+    text-transform: capitalize;
+    width: auto;
+}
+
+.fullpage_layout .fixed-iphone {
+    background: rgba(0, 0, 0, 0) url("../image/fixed-iphone.png") no-repeat scroll left center;
+    width: 302px;
+    height: 589px;
+    left: 50%;
+    margin-left: -535px;
+    top: 50%;
+    margin-top: -294.5px;
+    right: auto;
+    margin-right: 0;
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+}
+
+.fullpage_layout .fixed-iphone-wrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 1070px;
+}
+
+
+/*--------------------------------------------------------------
+RESPONSIVE CSS
+--------------------------------------------------------------*/
+
+@media(min-width: 980px) and (max-width: 1400px) {
+    .fullpage_layout .fixed-iphone {
+        background-size: 250px auto;
+    }
+    .fullpage_layout .tg-screenshot {
+        height: 373px;
+        width: 230px;
+    }
+    .fullpage_layout .tg-screenshot img {
+        width: 100%;
+    }
+    .fullpage_layout .screenshot-wrapper .tg-screenshot {
+        height: 373px !important;
+        width: 230px !important;
+    }
+    .fullpage_layout .screenshot .bx-wrapper {
+        left: 10px;
+        max-width: 234px !important;
+        position: relative;
+    }
+    .fullpage_layout .fullpage-content {
+        padding: 0 100px 0 0;
+        width: 72%;
+        word-wrap: break-word;
+    }
+    .fullpage_layout .fullpage-content .tg-column-wrapper,
+    .fullpage_layout .feature-center-image .feature-image {
+        margin: 0;
+    }
+    .fullpage_layout .feature-left .feature-block,
+    .fullpage_layout .feature-right .feature-block {
+        margin-top: 20px;
+    }
+    .fullpage_layout .screenshot .bx-controls-direction {
+        display: block;
+        width: 300px;
+    }
+    .fullpage_layout .share-wrapper .btn-wrapper {
+        margin-top: 25px;
+    }
+}
+
+@media( max-width: 1019px) {
+    .fullpage_layout #nav li::before,
+    .fullpage_layout #nav li a::after {
+        display: none;
+    }
+    .fullpage_layout .tg-menu-wrapper {
+        left: -100%;
+        -webkit-transition: all 0.5s ease 0s;
+        -moz-transition: all 0.5s ease 0s;
+        -ms-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+        background: #fff none repeat scroll 0 0;
+        box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+        height: 100%;
+        padding: 0;
+        position: fixed;
+        text-align: left;
+        top: 0;
+        width: 240px;
+        visibility: hidden;
+    }
+    .fullpage_layout .tg-menu-wrapper.fullpage-menu-active {
+        left: 0;
+        visibility: visible;
+    }
+    .fullpage_layout .main-navigation .fullpage-menu-active,
+    .fullpage_layout .main-navigation .menu {
+        display: block;
+    }
+}
+
+@media(min-width: 980px) and (max-width: 1200px) {
+    .fullpage_layout .tg-container,
+    .fullpage_layout .fixed-iphone-wrapper,
+    .fullpage_layout .banner-container {
+        width: 940px;
+    }
+    .fullpage_layout .fixed-iphone {
+        margin-left: -470px;
+    }
+    .fullpage_layout .copyright-desc,
+    .fullpage_layout .design-by,
+    .fullpage_layout .design-by a {
+        font-size: 12px;
+    }
+    .fullpage_layout .fullpage-content {
+        width: 66%;
+    }
+    .fullpage_layout .feature-center-image .feature-image img {
+        width: 100%;
+    }
+    .fullpage_layout .screenshot .bx-wrapper {
+        left: -10px;
+    }
+    .fullpage_layout .fullpage-content {
+        padding: 0;
+    }
+}
+
+@media(max-width: 979px) {
+    .fullpage_layout #site-navigation .menu-toggle::before {
+        right: 0px;
+    }
+    .fullpage_layout .fixed-iphone {
+        display: none;
+    }
+    .fullpage_layout .feature-phone-image,
+    .fullpage_layout .overview-content-image,
+    .fullpage_layout .share-image,
+    .fullpage_layout .screenshot-wrapper,
+    .fullpage_layout .testimonials-image,
+    .fullpage_layout .contact-image,
+    .fullpage_layout .iphone-screen {
+        display: none;
+    }
+    .fullpage_layout .banner-inner-content,
+    .fullpage_layout .overview-inner-content,
+    .fullpage_layout .feature-wrapper,
+    .fullpage_layout .share-wrapper,
+    .fullpage_layout .screenshot .section-title-wrapper,
+    .fullpage_layout .testimonials-wrapper,
+    .fullpage_layout .bx-wrapper,
+    .fullpage_layout .contact-block-wrapper {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    .fullpage_layout .tg-container,
+    .fullpage_layout .banner-container {
+        padding: 0 2%;
+        width: 100%;
+    }
+    .fullpage_layout .sub-title,
+    .fullpage_layout .banner-content,
+    .fullpage_layout .over-desc,
+    .fullpage_layout .banner-title,
+    .fullpage_layout .section-title,
+    .fullpage_layout .overview-title {
+        width: 100%;
+        text-align: center;
+    }
+    .fullpage_layout .feature-right,
+    .fullpage_layout .feature-left {
+        float: right;
+    }
+    .fullpage_layout .banner-btn-wrapper {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .fullpage_layout .banner-btn-wrapper a {
+        float: none;
+    }
+    .fullpage_layout .contact-wrapper {
+        width: 80%;
+        text-align: center;
+    }
+    .fullpage_layout .contact-wrapper .name-email-wrapper .your-email {
+        margin-left: 35px;
+    }
+    .fullpage_layout .your-name,
+    .fullpage_layout .your-email {
+        width: 100%;
+    }
+    .fullpage_layout .contact-wrapper .your-message {
+        text-align: center;
+    }
+    .fullpage_layout .contact-wrapper .name-email-wrapper .your-email {
+        margin-left: 0;
+    }
+    .fullpage_layout .banner-btn-wrapper a {
+        padding: 9px 30px;
+    }
+    .fullpage_layout .share-wrapper .btn-wrapper {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .fullpage_layout .copyright-desc,
+    .fullpage_layout .copyright-desc a,
+    .fullpage_layout .design-by,
+    .fullpage_layout .design-by a {
+        font-size: 12px;
+    }
+    .fullpage_layout .feature-right .feature-block,
+    .fullpage_layout .feature-left .feature-block {
+        margin-top: 30px;
+    }
+    .fullpage_layout .banner-btn-wrapper .btn-text h4 {
+         line-height: 27px;
+     }
+}
+
+@media(max-width: 600px) {
+    .fullpage_layout .banner-title,
+    .fullpage_layout .section-title,
+    .fullpage_layout .overview-title {
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .fullpage_layout .share-wrapper .btn-wrapper a:first-child {
+        font-size: 12px;
+        padding: 9px 43px;
+    }
+    .fullpage_layout .share-wrapper .btn-wrapper a {
+        font-size: 12px;
+        padding: 9px 34px;
+    }
+    .fullpage_layout .client-image {
+        margin-top: 20px;
+    }
+    .fullpage_layout .contact-wrapper .name-email-wrapper input {
+        line-height: 24px;
+        padding: 4px 11px;
+        width: 85%;
+    }
+    .fullpage_layout .contact-wrapper .name-email-wrapper .your-email {
+        margin: 20px 0 0;
+    }
+    .fullpage_layout .contact-wrapper .your-message textarea {
+        width: 85%;
+        margin-top: 20px;
+    }
+    .fullpage_layout .contact-wrapper form .wpcf7-submit {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fullpage_layout .banner-content,
+    .fullpage_layout .banner-btn-wrapper,
+    .fullpage_layout .feature-center-image {
+        display: block;
+    }
+    .fullpage_layout .btn-wrapper a:last-child {
+        margin-top: 0;
+    }
+    .fullpage_layout .sub-title,
+    .fullpage_layout .banner-content,
+    .fullpage_layout .over-desc,
+    .reviews .section-title-wrapper .sub-title {
+        font-size: 11px;
+        line-height: 15px;
+        margin: 20px 0;
+    }
+    .fullpage_layout .reviews-desc {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .fullpage_layout .contact-wrapper .name-email-wrapper input,
+    .fullpage_layout .contact-wrapper .your-message textarea {
+        font-size: 11px;
+    }
+    .fullpage_layout .contact-wrapper .your-message textarea {
+        height: 75px;
+    }
+    .fullpage_layout .contact-wrapper form .wpcf7-submit {
+        font-size: 12px;
+        padding: 12px 31px;
+        width: auto;
+    }
+    .fullpage_layout .clients-reviews {
+        margin: 0 auto;
+    }
+    .fullpage_layout .btn-wrapper > a {
+        display: inline-block;
+        width: 165px;
+    }
+    .fullpage_layout #site-navigation .menu-toggle::before {
+        right: -35px;
+    }
+}
+
+@media(max-width: 360px) and (min-width: 320px) {
+    .fullpage_layout .site-title {
+        font-size: 22px;
+    }
+    .fullpage_layout .banner-title,
+    .fullpage_layout .section-title,
+    .fullpage_layout .overview-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .fullpage_layout .feature-right,
+    .fullpage_layout .feature-left {
+        float: left;
+    }
+    .fullpage_layout .feature-left .feature-title a,
+    .feature-right .feature-title a {
+        font-size: 12px;
+    }
+    .fullpage_layout .btn-wrapper a {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .fullpage_layout .feature-right,
+    .fullpage_layout .feature-left {
+        margin-left: 14px;
+        width: 44%;
+    }
+    .fullpage_layout .btn-wrapper a:last-child {
+        margin: 10px auto 0;
+        width: 80%;
+    }
+    .fullpage_layout .banner-btn-wrapper > a {
+        display: inline-block;
+        margin-top: 9px;
+        width: 168px;
+    }
+    .fullpage_layout .client-image img {
+        width: 80%;
+    }
+}

@@ -1,0 +1,26 @@
+.testimonial-row {
+
+  background-color: $lighter-grey;
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  .testimonial {
+    color: $white;
+    padding: 0 20px;
+
+    span.author {
+      display: block;
+      width: 100%;
+      text-align: right;
+      font-style: italic;
+    }
+
+    span.text-blue {
+      color: $primary-blue;
+    }
+  }
+
+  >div:nth-child(even) {
+    transform: translateY(50px);
+  }
+}
