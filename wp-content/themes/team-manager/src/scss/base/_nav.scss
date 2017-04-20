@@ -2,4 +2,8 @@
   color: $white;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    color: $primary-blue;
+  }
 }

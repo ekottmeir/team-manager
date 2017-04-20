@@ -1,3 +1,24 @@
 footer#footer {
-  background-color: $light-black;
+  background-color: black;
+  border: none;
+  height: 200px;
+
+  .parallax_one_copyright_content,
+  .social-icons ,
+  .powered-by {
+    display: none;
+  }
+
+  .footer-bottom-wrap ul#menu-footer-menu {
+    float: left;
+    margin: 0 0 0 20px;
+    li {
+      display: block;
+      text-align: left;
+
+      a {
+        color: $light-grey;
+      }
+    }
+  }
 }

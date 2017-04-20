@@ -13,3 +13,10 @@ function tm_child_styles() {
     wp_enqueue_style( 'tm-style', get_stylesheet_directory_uri().'/style.css', array('parallax-one-style') );
 }
 add_action( 'wp_enqueue_scripts', 'tm_child_styles' );
+
+function kb_svg ( $svg_mime ){
+    $svg_mime['svg'] = 'image/svg+xml';
+    return $svg_mime;
+}
+
+add_filter( 'upload_mimes', 'kb_svg' );

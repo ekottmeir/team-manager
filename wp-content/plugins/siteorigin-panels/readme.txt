@@ -2,8 +2,8 @@
 Tags: page builder, responsive, widget, widgets, builder, page, admin, gallery, content, cms, pages, post, css, layout, grid
 Requires at least: 4.4
 Tested up to: 4.7.3
-Stable tag: 2.5.1
-Build time: 2017-04-18T08:38:37+02:00
+Stable tag: 2.4.25
+Build time: 2017-04-19T17:12:54+02:00
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Donate link: https://siteorigin.com/downloads/contribution/
@@ -96,7 +96,14 @@ We've tried to ensure that Page Builder is compatible with most plugin widgets. 
 
 == Changelog ==
 
-= 2.5.1 - 14 April 2017 =
+= 2.5.2 - 19 April 2017 =
+* Fixed RTL layouts for new flexbox layout.
+* Renamed front.css to ensure cache busting.
+* Allow cache with auto legacy layout.
+* Use HTTPS for layout directory screenshots.
+* Fixed namespaced widget escaping.
+
+= 2.5.1 - 18 April 2017 =
 * Added null function for Sydney theme compatibility.
 * Added method for including additional external layout directories.
 * Added fix for old Vantage PB layout compatibility.

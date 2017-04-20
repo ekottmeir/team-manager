@@ -1,0 +1,34 @@
+.contact-section {
+  padding: 60px 20px;
+
+  input,
+  label {
+    width: 100%;
+  }
+
+  label,
+  .wpcf7-submit {
+    font-weight: 200;
+    letter-spacing: 0.5px;
+  }
+
+  input,
+  textarea {
+    border-radius: 0;
+  }
+
+  .wpcf7-submit {
+    background-color: $primary-blue;
+    background-image: none;
+    outline: none;
+    font-size: 1.6rem;
+
+    &:hover {
+      background-color: $primary-blue-light;
+    }
+  }
+
+  .wpcf7 {
+    padding-top: 140px;
+  }
+}
