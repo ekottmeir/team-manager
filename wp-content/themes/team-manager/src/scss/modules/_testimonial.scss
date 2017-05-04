@@ -1,12 +1,33 @@
 .testimonial-row {
 
   background-color: $lighter-grey;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media (min-width: 767px){
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .panel-grid-cell {
+    margin-bottom: 0!important;
+  }
+
+  .panel-grid-cell:nth-child(even){
+    background-color: $dark-grey;
+
+    @media (min-width: 767px){
+      background-color: $lighter-grey;
+    }
+  }
 
   .testimonial {
     color: $white;
-    padding: 0 20px;
+    padding: 40px 20px;
+
+    @media (min-width: 767px){
+      padding: 0 20px;
+    }
 
     span.author {
       display: block;
@@ -21,6 +42,10 @@
   }
 
   >div:nth-child(even) {
-    transform: translateY(50px);
+    transform: translateY(0);
+
+    @media (min-width: 767px){
+      transform: translateY(50px);
+    }
   }
 }

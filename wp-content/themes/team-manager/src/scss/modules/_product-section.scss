@@ -3,9 +3,13 @@
   background-color: $lighter-grey;
 
   .woocommerce div.product div.images.woocommerce-product-gallery {
-    width: 50%;
+    width: 100%;
     position: relative;
     float: left;
+
+    @media (min-width: 991px){
+      width: 50%;
+    }
 
     &::before,
     &::after {
@@ -25,9 +29,13 @@
   }
 
   .woocommerce div.product div.summary {
-    width: 50%;
+    width: 100%;
     padding: 20px 0 20px 20px;
     float: left;
+
+    @media (min-width: 991px){
+      width: 50%;
+    }
 
     .amount {
       color: $white;
@@ -45,7 +53,7 @@
 
   .woocommerce div.product h1.product_title {
     color: $white;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 100;
     margin-bottom: 60px;
 
@@ -53,7 +61,7 @@
       content: '';
       display: inline-block;
       width: 10px;
-      height: 30px;
+      height: 23px;
       margin-right: 10px;
       background-color: $primary-blue;
     }

@@ -1,0 +1,17 @@
+.metaslider {
+
+  div.caption-wrap {
+    opacity: 0.6;
+  }
+
+  @media (min-width: 600px) {
+    div.caption-wrap {
+      opacity: 0;
+      transition: ease-in 0.3s;
+    }
+  }
+
+  &:hover div.caption-wrap {
+    opacity: 0.6;
+  }
+}

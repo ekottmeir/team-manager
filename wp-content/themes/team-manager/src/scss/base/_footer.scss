@@ -1,7 +1,10 @@
 footer#footer {
   background-color: black;
   border: none;
-  height: 200px;
+
+  .widget {
+    margin: 0;
+  }
 
   .parallax_one_copyright_content,
   .social-icons ,
@@ -9,16 +12,13 @@ footer#footer {
     display: none;
   }
 
-  .footer-bottom-wrap ul#menu-footer-menu {
+  .footer-widget-wrap > div {
+    padding: 20px;
     float: left;
-    margin: 0 0 0 20px;
-    li {
-      display: block;
-      text-align: left;
 
-      a {
-        color: $light-grey;
-      }
+    a {
+      color: $light-grey;
+      text-decoration: none;
     }
   }
 }
