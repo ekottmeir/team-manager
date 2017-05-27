@@ -49,19 +49,19 @@ function generate_key() {
 
 
 function save_license($license, $order_id, $product){
-/*
+
     //live
     $servername = "localhost";
     $username = "teamManagerAdmin";
     $password = "teamManagerAdmin2017#!";
     $dbname = "teamManagerUsers";
-*/
-
+    /*
      //local
     $servername = "localhost";
     $username = "tm";
     $password = "tmtest#9";
     $dbname = "teamManagerUsers";
+    */
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
