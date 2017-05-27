@@ -1,3 +1,4 @@
+/*
 .woocommerce-page {
 
   p,
@@ -128,4 +129,38 @@
 
 .panel-last-child .product-section .woocommerce div.product div.summary {
   border: none;
+}*/
+
+
+.woocommerce {
+  h2 {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.woocommerce ul.products li.product {
+  width: 100%;
+  border: none;
+  padding: 20px 20px 40px;
+
+  a {
+    border: none!important;
+
+    img {
+      margin: 20px auto 30px;
+      width: 70%;
+    }
+  }
+
+
+  .button {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: $primary-blue;
+    background-image: none;
+    padding-top: 4px;
+  }
 }

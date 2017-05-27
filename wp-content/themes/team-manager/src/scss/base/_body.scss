@@ -9,6 +9,40 @@ body {
   }
 }
 
+
+.textwidget h3 {
+  color: white;
+  font-weight: 200;
+}
+
+a,
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#btn-download {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+#btn-download span {
+  color: white!important;
+  font-size: 1.3em;
+}
+
+.product-section .woocommerce div.product div.summary {
+  width: 100%!important;
+}
+
+.woocommerce div.product .woocommerce-tabs {
+  display: none!important;
+}
+
+
+
+
+
 .center {
   text-align: center!important;
 }
