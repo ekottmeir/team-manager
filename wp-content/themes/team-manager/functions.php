@@ -77,22 +77,19 @@ function save_license($license, $order_id, $product){
     $first_name = $order->get_billing_first_name();
     $_last_name = $order->get_billing_last_name();
     $club = $order->get_billing_company();
-    $date = '';
     $units = '';
     $product_type = $product['name'];
     $accountname = $club . ' - ' . $first_name . ' ' . $_last_name;
+    $date = date('d.m.Y', strtotime('+14 days'));
 
-    if($product_type == 'Einzellizenz' || $product_type == 'Vereinslizenz') {
-        $date = '01.01.2000';
-    } else {
-        $date = date('d.m.Y', strtotime('+1 year'));
-    }
-
-    if($product_type == 'Einzellizenz' || $product_type == 'Einzellizenz Miete') {
-        $units = '2';
+    if($product_type == 'Volllizenz - privat' || $product_type == 'Jahreslizenz - privat') {
+        $units = '2 ';
+        wp_mail('emil.kottmeir@googlemail.com', 'type 2', $product_type . ' ' . $units );
     } else {
         $units = '6';
+        wp_mail('emil.kottmeir@googlemail.com', 'type 6', $product_type . ' ' . $units );
     }
+
 
     $sql = 'SELECT MAX(id) FROM accounts';
 
@@ -121,7 +118,7 @@ function save_license($license, $order_id, $product){
     $conn->close();
 }
 
-    /*-------------- get order data -------------------------*/
+/*-------------- get order data -------------------------*/
 
 function process_products ($order_id) {
 
@@ -139,6 +136,9 @@ function process_products ($order_id) {
         send_license_mail($order_licenses, $order->get_billing_email());
     }
 }
+
+/*-------------- lizense email -------------------------*/
+
 
 function send_license_mail($order_licenses, $email) {
 
@@ -183,6 +183,8 @@ function send_license_mail($order_licenses, $email) {
         <body>
             <h2>Lizenzschlüssel</h2>
             <p>Diese Email enthält Lizenzschlüssel für die Aktivierung Ihrer Software.</p>
+            <p style='line-height: 30px;'>Die Lizenzen sind zunächst <strong>14 Tage</strong> aktiv. <br>
+            Wird der Rechnungsbetrag überwießen folg die Freischaltung für den jeweiligen Zeitraum.</p>
             <table>
                 <tr>
                     <th>Lizenz</th>

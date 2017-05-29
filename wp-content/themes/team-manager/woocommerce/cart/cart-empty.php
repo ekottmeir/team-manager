@@ -33,7 +33,7 @@ wc_print_notices();
 <?php if ( wc_get_page_id( 'shop' ) > 0 ) : ?>
 	<p class="return-to-shop">
 		<a class="button wc-backward" href="<?php echo get_option( 'siteurl' ); ?>">
-			<?php _e( 'Return to shop', 'woocommerce' ) ?>
+			Zurück zur Startseite
 		</a>
 	</p>
 <?php endif; ?>
