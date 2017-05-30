@@ -66,3 +66,49 @@ a:hover {
 .hidden {
   display: none;
 }
+
+.button,
+.woocommerce button.button {
+  background-image: none;
+  border-radius: 0;
+  padding: 5px 10px;
+
+}
+
+.woocommerce .thankyou-options {
+
+  margin-top: 100px;
+  padding-bottom: 100px;
+
+  button.button {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    color: $white;
+
+    &:hover {
+      color: $primary-blue;
+      text-decoration: none;
+
+      a {
+        color: $primary-blue;
+      }
+    }
+
+    i {
+      margin-right: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  button.button a {
+    color: $white;
+    display: block;
+
+    &:hover {
+      color: $primary-blue;
+      text-decoration: none;
+    }
+  }
+
+}

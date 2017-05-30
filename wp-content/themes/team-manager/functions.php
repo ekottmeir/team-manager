@@ -84,10 +84,8 @@ function save_license($license, $order_id, $product){
 
     if($product_type == 'Volllizenz - privat' || $product_type == 'Jahreslizenz - privat') {
         $units = '2 ';
-        wp_mail('emil.kottmeir@googlemail.com', 'type 2', $product_type . ' ' . $units );
     } else {
         $units = '6';
-        wp_mail('emil.kottmeir@googlemail.com', 'type 6', $product_type . ' ' . $units );
     }
 
 
@@ -200,6 +198,10 @@ function send_license_mail($order_licenses, $email) {
     wp_mail($to, $subject, $content, $headers);
 }
 
+
+
 add_action( 'wp_enqueue_scripts', 'tm_child_styles' );
 add_filter( 'upload_mimes', 'kb_svg' );
 add_action('woocommerce_thankyou', 'process_products', 10);
+
+
