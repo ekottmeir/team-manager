@@ -80,7 +80,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php endif; ?>
 	<div class="thankyou-options">
 		<?php
-		echo '<button class="button print-btn" onclick="window.print();"> <i class="fa fa-print" aria-hidden="true"></i>Drucken</button><button class="button home-btn"><a href="'. get_site_url() .'">Zurück zur Startseite</a></button>';
+		echo '<button class="button print-btn" onclick="window.print();"> <i class="fa fa-print" aria-hidden="true"></i>Drucken</button><a class="button home-btn" href="'. get_site_url() .'">Zurück zur Startseite</a>';
 		?>
 </div>
 </div>
