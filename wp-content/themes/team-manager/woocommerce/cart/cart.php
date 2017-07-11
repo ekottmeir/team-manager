@@ -36,7 +36,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 				--->
 				<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
 				<th class="product-name">Produktbeschreibung</th>
+				<th class="product-name">Nettopreis</th>
 				<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
+				<th class="product-name">Mehrwertsteuer</th>
 				<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
 				<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
 			</tr>
@@ -102,9 +104,28 @@ do_action( 'woocommerce_before_cart' ); ?>
 							echo apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 							?>
 						</td>
+
+						<td class="product-brutto-price">
+							<?php
+							echo apply_filters( 'woocommerce_cart_item_price_brutto', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity']) );
+							//echo apply_filters( 'woocommerce_cart_item_price_brutto', $_product->get_price_excluding_tax() );
+							?>
+						</td>
+
 						<td class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
+							?>
+						</td>
+
+						<td class="product-tax">
+							<?php
+
+							$product_tax = $_product->get_price_including_tax() - $_product->get_price_excluding_tax();
+							$tax_template ='<span class="woocommerce-Price-amount amount">' . $product_tax . '<span class="woocommerce-Price-currencySymbol">€</span></span>';
+
+
+							echo apply_filters( 'woocommerce_cart_item_tax', $tax_template );
 							?>
 						</td>
 
