@@ -36,10 +36,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 				--->
 				<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
 				<th class="product-name">Produktbeschreibung</th>
-				<th class="product-name">Nettopreis</th>
-				<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
+				<th class="product-name">Netto</th>
 				<th class="product-name">Mehrwertsteuer</th>
-				<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
 				<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
 			</tr>
 		</thead>
@@ -105,30 +103,30 @@ do_action( 'woocommerce_before_cart' ); ?>
 							?>
 						</td>
 
-						<td class="product-brutto-price">
+						<td class="product-netto-price">
 							<?php
-							echo apply_filters( 'woocommerce_cart_item_price_brutto', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity']) );
-							//echo apply_filters( 'woocommerce_cart_item_price_brutto', $_product->get_price_excluding_tax() );
+							$product_netto = $_product->get_price_excluding_tax();
+							$netto = number_format($product_netto, 2, ',', ' ');
+							$netto_template ='<span class="woocommerce-Price-amount amount">' . $netto . '<span class="woocommerce-Price-currencySymbol">€</span></span>';
+							echo apply_filters( 'woocommerce_cart_item_price_netto', $netto_template );
 							?>
 						</td>
-
+						<!--
 						<td class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 							?>
 						</td>
-
+						-->
 						<td class="product-tax">
 							<?php
-
 							$product_tax = $_product->get_price_including_tax() - $_product->get_price_excluding_tax();
-							$tax_template ='<span class="woocommerce-Price-amount amount">' . $product_tax . '<span class="woocommerce-Price-currencySymbol">€</span></span>';
-
-
+							$tax = number_format($product_tax, 2, ',', ' ');
+							$tax_template ='<span class="woocommerce-Price-amount amount">' . $tax . '<span class="woocommerce-Price-currencySymbol">€</span></span>';
 							echo apply_filters( 'woocommerce_cart_item_tax', $tax_template );
 							?>
 						</td>
-
+						<!---
 						<td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
 							<?php
 								if ( $_product->is_sold_individually() ) {
@@ -145,7 +143,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item );
 							?>
 						</td>
-
+						-->
 						<td class="product-subtotal" data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>">
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );

@@ -45,9 +45,9 @@ if ( ! is_ajax() ) {
 
 		<?php wc_get_template( 'checkout/terms.php' ); ?>
 
-		<div>
-			<input id="license-checkbox" type="checkbox" name="checkbox" value="" onclick="activateButton()" /><span>Ich akzeptiere die <a href="http://www.handball-team-manager.de/wp-content/uploads/2017/05/LIZENZBEDINGUNGEN.pdf" target="_blank">Lizenzbedingungen</a></span> <span class="required">*</span>
-		</div>
+		<p class="form-row terms wc-terms-and-conditions">
+			<input id="license-checkbox" type="checkbox" name="checkbox" value="" onclick="activateButton()" /><span>Ich akzeptiere die <a href="http://www.handball-team-manager.de/wp-content/uploads/2017/05/LIZENZBEDINGUNGEN.pdf" target="_blank">Lizenzbedingungen</a>.</span> <span class="required">*</span>
+		</p>
 		<script>
 			function activateButton(){
 				if(document.getElementById("license-checkbox").checked && document.getElementById("terms-checkbox").checked){
