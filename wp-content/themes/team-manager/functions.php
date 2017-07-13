@@ -182,7 +182,7 @@ function send_license_mail($order_licenses, $email) {
             <h2>Lizenzschlüssel</h2>
             <p>Diese Email enthält Lizenzschlüssel für die Aktivierung Ihrer Software.</p>
             <p style='line-height: 30px;'>Die Lizenzen sind zunächst <strong>14 Tage</strong> aktiv. <br>
-            Wird der Rechnungsbetrag überwießen folg die Freischaltung für den jeweiligen Zeitraum.</p>
+            Wird der Rechnungsbetrag überwießen folgt die Freischaltung für den jeweiligen Zeitraum.</p>
             <table>
                 <tr>
                     <th>Lizenz</th>

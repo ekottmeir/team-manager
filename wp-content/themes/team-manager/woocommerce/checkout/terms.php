@@ -21,7 +21,7 @@ if ( $terms_page_id > 0 && apply_filters( 'woocommerce_checkout_show_terms', tru
 		echo '<div class="woocommerce-terms-and-conditions" style="display: none; max-height: 200px; overflow: auto;">' . $terms_content . '</div>';
 	?>
 	<p class="form-row terms wc-terms-and-conditions">
-		<input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="terms" id="terms-checkbox" onclick="activateButton()" <?php checked( apply_filters( 'woocommerce_terms_is_checked_default', isset( $_POST['terms'] ) ), true ); ?> id="terms" /> <span><?php printf( __( 'Ich habe die <a href="%s" class="woocommerce-terms-and-conditions-link">Allgemeinen Geschäftsbedingungen</a> gelesen und bestätige diese hiermit.', 'woocommerce' ), esc_url( wc_get_page_permalink( 'terms' ) ) ); ?></span> <span class="required">*</span>
+		<input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="terms" id="terms-checkbox" onclick="activateButton()" <?php checked( apply_filters( 'woocommerce_terms_is_checked_default', isset( $_POST['terms'] ) ), true ); ?> id="terms" /> <span><?php printf( __( 'Ich habe die <a href="%s" class="woocommerce-terms-and-conditions-link" target="_blank">Allgemeinen Geschäftsbedingungen</a> gelesen und bestätige diese hiermit.', 'woocommerce' ), esc_url( wc_get_page_permalink( 'terms' ) ) ); ?></span> <span class="required">*</span>
 		<input type="hidden" name="terms-field" value="1" />
 	</p>
 	<?php do_action( 'woocommerce_checkout_after_terms_and_conditions' ); ?>

@@ -52,10 +52,8 @@ if ( ! is_ajax() ) {
 			function activateButton(){
 				if(document.getElementById("license-checkbox").checked && document.getElementById("terms-checkbox").checked){
 					document.getElementById("place_order").disabled = false;
-					console.log('true')
 				} else {
 					document.getElementById("place_order").disabled = true;
-					console.log('false')
 				}
 			}
 		</script>
