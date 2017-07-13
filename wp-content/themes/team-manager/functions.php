@@ -83,9 +83,9 @@ function save_license($license, $order_id, $product){
     $date = date('d.m.Y', strtotime('+14 days'));
 
     if($product_type == 'Volllizenz - privat' || $product_type == 'Jahreslizenz - privat') {
-        $units = '2 ';
+        $units = '1 ';
     } else {
-        $units = '6';
+        $units = '5';
     }
 
 
