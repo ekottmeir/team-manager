@@ -50,7 +50,8 @@ if ( ! is_ajax() ) {
 		</p>
 		<script>
 			function activateButton(){
-				if(document.getElementById("license-checkbox").checked && document.getElementById("terms-checkbox").checked){
+				//if(document.getElementById("license-checkbox").checked && document.getElementById("terms-checkbox").checked){
+				if(document.getElementById("license-checkbox").checked){
 					document.getElementById("place_order").disabled = false;
 				} else {
 					document.getElementById("place_order").disabled = true;
