@@ -45,20 +45,6 @@ if ( ! is_ajax() ) {
 
 		<?php wc_get_template( 'checkout/terms.php' ); ?>
 
-		<p class="form-row terms wc-terms-and-conditions">
-			<input id="license-checkbox" type="checkbox" name="checkbox" value="" onclick="activateButton()" /><span>Ich akzeptiere die <a href="http://www.handball-team-manager.de/wp-content/uploads/LIZENZBEDINGUNGEN.pdf" target="_blank">Lizenzbedingungen</a>.</span> <span class="required">*</span>
-		</p>
-		<script>
-			function activateButton(){
-				//if(document.getElementById("license-checkbox").checked && document.getElementById("terms-checkbox").checked){
-				if(document.getElementById("license-checkbox").checked){
-					document.getElementById("place_order").disabled = false;
-				} else {
-					document.getElementById("place_order").disabled = true;
-				}
-			}
-		</script>
-
 		<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 
 		<?php echo apply_filters( 'woocommerce_order_button_html', '<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '" disabled />' ); ?>
