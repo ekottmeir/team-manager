@@ -65,7 +65,7 @@ foreach ( $items as $item_id => $item ) :
 			</td>
 			<td class="td" style="text-align:<?php echo $text_align; ?>; vertical-align:middle; border: 1px solid #eee; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
 				<?php
-				echo '<span class="woocommerce-Price-amount amount">' . $order->get_item_tax( $item ) . '<span class="woocommerce-Price-currencySymbol">€</span><span style="font-size: 11px;"> (19%)</span></span>';
+				echo '<span class="woocommerce-Price-amount amount">' . $order->get_item_tax( $item ) . '<span class="woocommerce-Price-currencySymbol">€</span><span style="font-size: 11px;"> <small>(19%)</small></span></span>';
 				?>
 			</td>
 			<td class="td" style="text-align:<?php echo $text_align; ?>; vertical-align:middle; border: 1px solid #eee; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;"><?php echo $order->get_formatted_line_subtotal( $item ); ?></td>

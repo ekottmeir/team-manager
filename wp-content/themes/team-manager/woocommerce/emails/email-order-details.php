@@ -56,7 +56,7 @@ do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plai
 					$i++;
 					?><tr>
 						<th class="td" scope="row" colspan="3" style="text-align:<?php echo $text_align; ?>; <?php echo ( 1 === $i ) ? 'border-top-width: 4px;' : ''; ?>"><?php echo $total['label']; ?></th>
-						<td class="td" style="text-align:<?php echo $text_align; ?>; <?php echo ( 1 === $i ) ? 'border-top-width: 4px;' : ''; ?>"><?php echo $total['value']; ?> <?php echo ( 3 === $i ) ? '<span style="font-size: 11px;"> inkl. 19% Mwst.</span>' : ''; ?></td>
+						<td class="td" style="text-align:<?php echo $text_align; ?>; <?php echo ( 1 === $i ) ? 'border-top-width: 4px;' : ''; ?>"><?php echo $total['value']; ?> <?php echo ( 3 === $i ) ? '<span style="font-size: 11px;"> (19%)</span>' : ''; ?></td>
 					</tr><?php
 				}
 			}

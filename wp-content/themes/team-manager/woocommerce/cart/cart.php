@@ -122,7 +122,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 							<?php
 							$product_tax = $_product->get_price_including_tax() - $_product->get_price_excluding_tax();
 							$tax = number_format($product_tax, 2, ',', ' ');
-							$tax_template ='<span class="woocommerce-Price-amount amount">' . $tax . '<span class="woocommerce-Price-currencySymbol">€</span> (19%)</span>';
+							$tax_template ='<span class="woocommerce-Price-amount amount">' . $tax . '<span class="woocommerce-Price-currencySymbol">€</span> <small>(19%)</small></span>';
 							echo apply_filters( 'woocommerce_cart_item_tax', $tax_template );
 							?>
 						</td>

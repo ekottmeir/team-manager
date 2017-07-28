@@ -56,7 +56,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<?php
 								$product_tax = $_product->get_price_including_tax() - $_product->get_price_excluding_tax();
 								$tax = number_format($product_tax, 2, ',', ' ');
-								$tax_template ='<span class="woocommerce-Price-amount amount">' . $tax . '<span class="woocommerce-Price-currencySymbol">€</span> (19%)</span>';
+								$tax_template ='<span class="woocommerce-Price-amount amount">' . $tax . '<span class="woocommerce-Price-currencySymbol">€</span> <small>(19%)</small></span>';
 								echo apply_filters( 'woocommerce_cart_item_tax', $tax_template );
 							?>
 						</td>
@@ -122,7 +122,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<tr class="order-total">
 			<th colspan="3"><?php _e( 'Total', 'woocommerce' ); ?></th>
-			<td><?php wc_cart_totals_order_total_html(); ?></td>
+			<td><?php wc_cart_totals_order_total_html(); ?><small> (19%)</small>
+			</td>
 		</tr>
 
 		<?php do_action( 'woocommerce_review_order_after_order_total' ); ?>
