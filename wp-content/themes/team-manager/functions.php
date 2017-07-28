@@ -16,6 +16,19 @@ function tm_child_styles() {
     wp_enqueue_style( 'tm-style', get_stylesheet_directory_uri().'/style.css', array('parallax-one-style') );
 }
 
+/*-------------- register child theme js -------------------------*/
+
+function tm_child_js(){
+
+       wp_enqueue_script('team-manager-js', get_stylesheet_directory_uri() . '/includes/js/team-manager.js');
+
+}
+
+add_action( 'wp_enqueue_scripts', 'tm_child_js' );
+
+
+
+
 /*-------------- set upload types -------------------------*/
 
 function kb_svg ( $svg_mime ){

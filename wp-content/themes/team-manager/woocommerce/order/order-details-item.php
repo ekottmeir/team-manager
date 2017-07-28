@@ -49,7 +49,7 @@ if ( ! apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
 	</td>
 	<td>
 		<?php
-		echo '<span class="woocommerce-Price-amount amount">' . $order->get_item_tax( $item ) . '<span class="woocommerce-Price-currencySymbol">€</span></span>';
+		echo '<span class="woocommerce-Price-amount amount">' . $order->get_item_tax( $item ) . '<span class="woocommerce-Price-currencySymbol">€</span> (19%)</span>';
 		?>
 	</td>
 	<td class="woocommerce-table__product-total product-total">
